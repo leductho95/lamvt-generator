@@ -1,0 +1,79 @@
+
+extends layouts/_layout
+
+block head
+  +head("Benzen - Category page")
+
+block body
+
+  main.main-body
+    nav(aria-label='breadcrumb').site-breadcrumb
+      .container.px-0
+        ol.breadcrumb.bg-transparent.mb-0.py-2.py-md-4
+          li.breadcrumb-item
+            a(href='index.html')
+              i.fa.fa-home.mr-2
+              | Trang chủ
+          li.breadcrumb-item.active(aria-current='page') Danh mục sản phẩm
+
+    .product-widget.main-category.mb-4.mb-md-5
+      .container.px-0.px-md-3
+        .product-wrap.bg-white.mx-0
+          .site-heading.d-flex.align-items-center.justify-content-between
+            h2 danh mục sản phẩm
+            span.color-primary Máy phát 3 pha
+          .d-flex.flex-wrap
+            +product({
+              imgSrc: 'images/product5.jpg',
+            })
+            +product({
+              imgSrc: 'images/product6.jpg',
+            })
+            +product({
+              imgSrc: 'images/product7.jpg',
+            })
+            +product({
+              imgSrc: 'images/product8.jpg',
+            })
+            +product({
+              imgSrc: 'images/product9.jpg',
+            })
+            +product({
+              imgSrc: 'images/product10.jpg',
+            })
+            +product({
+              imgSrc: 'images/product11.jpg',
+            })
+            +product({
+              imgSrc: 'images/product12.jpg',
+            })
+
+            +product({
+              imgSrc: 'images/product13.jpg',
+            })
+            +product({
+              imgSrc: 'images/product14.jpg',
+            })
+            +product({
+              imgSrc: 'images/product15.jpg',
+            })
+            +product({
+              imgSrc: 'images/product16.jpg',
+            })
+
+            +product({
+              imgSrc: 'images/product17.jpg',
+            })
+            +product({
+              imgSrc: 'images/product18.jpg',
+            })
+            +product({
+              imgSrc: 'images/product19.jpg',
+            })
+            +product({
+              imgSrc: 'images/product20.jpg',
+            })
+
+      .container
+        .main-category-view-more.my-4
+          a(href="#" title="") Xem thêm

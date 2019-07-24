@@ -1,0 +1,115 @@
+mixin header()
+  header.site-header
+    .topbar
+      .container
+        .row
+          .col-sm-6
+            .topbar-left
+              p.mb-0
+                i.fa.fa-map-marked-alt.mr-2
+                span TDP Phú Thứ, Nam Từ Liêm, Hà Nội
+          .col-sm-6
+            .topbar-right.text-left.text-md-right
+              p.mb-0
+                i.fa.fa-mail-bulk.mr-2
+                span lamvt20031979@gmail.com
+
+    .topbar-bottom.py-3.py-md-4.d-none.d-lg-block
+      .container
+        .row.justify-content-between.align-items-center
+          .col-md-6
+            a(href="#").site-logo
+              img(src="images/logo.png", alt="site logo", class="img-fluid")
+          .col-md-6
+            form.form-inline.my-2.my-lg-0.site-search.text-right.d-flex
+              input.form-control.w-100.bg-transparent(type='search', placeholder='Bạn tìm gì...', aria-label='Search')
+              button.btn(type='submit')
+                i.fa.fa-search
+
+    .site-menu.d-none.d-lg-block
+      .container
+        .align-items-center.justify-content-between.row
+          .col-3.d-none.d-xl-block
+            .site-category
+              .site-category-wrap
+                h3.d-flex.align-items-center.justify-content-between
+                  i.fa.fa-bars
+                  span.text-uppercase danh mục sản phẩm
+                  i.fa.fa-caret-down
+              .site-category-content
+                ul.list-group.list-group-flush
+                  li.list-group-item.px-3
+                    a(href="#" title="") Lorem ipsum is simply dummy text
+                  li.list-group-item.px-3
+                    a(href="#" title="") Lorem ipsum is simply dummy text
+                  li.list-group-item.px-3
+                    a(href="#" title="") Lorem ipsum is simply dummy text
+                  li.list-group-item.px-3
+                    a(href="#" title="") Lorem ipsum is simply dummy text
+                  li.list-group-item.px-3
+                    a(href="#" title="") Lorem ipsum is simply dummy text
+                  li.list-group-item.px-3
+                    a(href="#" title="") Lorem ipsum is simply dummy text
+                  li.list-group-item.px-3
+                    a(href="#" title="") Lorem ipsum is simply dummy text
+          .col-lg-9.col-xl-7.nav.main-menu
+            ul.list-unstyled.list-inline.text-center.mx-xl-auto
+              li.main-menu-item
+                a.main-menu-link(href='index.html')
+                  | trang chủ
+                  span.sr-only (current)
+              li.main-menu-item
+                a.main-menu-link(href='#') giới thiệu
+              li.main-menu-item
+                a.main-menu-link(href='#') sản phẩm
+              li.main-menu-item
+                a.main-menu-link(href='#') tin tức
+              li.main-menu-item
+                a.main-menu-link(href='#') liên hệ
+
+          .col-lg-3.col-xl-2
+            .site-phone.d-flex.justify-content-center.align-items-center
+              a(href="#" title="" class="text-uppercase align-middle d-flex justify-content-center align-items-center")
+                i.fa.fa-phone.mr-2
+                span 039 981 5232
+
+    .site-menu-mobile.py-2.d-block.d-lg-none
+      .container
+        .d-flex.justify-content-between.align-items-center
+          button.menu-toggle.js-menu-toggle.d-block.d-lg-none(aria-expanded='false')
+            i.fa.fa-bars
+          .site-logo
+            a.d-block(href='index.html')
+              img.img-fluid.d-block.mx-auto(src='images/logo.png', alt='site-logo')
+          // Button trigger modal 
+          button.btn.btn-primary.rounded-0(type='button', data-toggle='modal', data-target='#searchModal')
+            i.fa.fa-search
+
+    .side-nav.d-block.d-lg-none.js-canvas-menu
+      .side-nav-top.py-2.pl-3.border-bottom.d-flex.align-items-center.justify-content-between
+        h4.mb-0 Menu
+        button.close-menu.js-close-menu(type='button', aria-label='Close')
+          i.fas.fa-times
+      ul.site-mobile-menu.navbar-nav.p-3.text-left
+        li.nav-item.active
+          a.nav-link(href='index.html')
+            | trang chủ
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='#') giới thiệu
+        li.nav-item
+          a.nav-link(href='category.html') sản phẩm
+          a.fas.fa-angle-right.js-change-icon.ic-caret(data-toggle='collapse', href='#collapseMenu', role='button', aria-expanded='false', aria-controls='collapseMenu')
+        li.collapse#collapseMenu
+          .sub-menu-mobile
+            a(href='category.html' title="" class="py-1") Lorem Ipsum is simply dummy text
+            a(href='category.html' title="" class="py-1") Lorem Ipsum is simply dummy text
+            a(href='category.html' title="" class="py-1") Lorem Ipsum is simply dummy text
+            a(href='category.html' title="" class="py-1") Lorem Ipsum is simply dummy text
+            a(href='category.html' title="" class="py-1") Lorem Ipsum is simply dummy text
+            a(href='category.html' title="" class="py-1") Lorem Ipsum is simply dummy text
+            a(href='category.html' title="" class="py-1") Lorem Ipsum is simply dummy text
+        li.nav-item
+          a.nav-link(href='#') tin tức
+        li.nav-item
+          a.nav-link(href='#') liên hệ

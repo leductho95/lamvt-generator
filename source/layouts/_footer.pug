@@ -1,0 +1,124 @@
+mixin footer()
+  .promo
+    .container
+      .row
+        .col-md-6.col-lg-3
+          .promo-item
+            span.fa.fa-truck.promo-icon.mr-3
+            .promo-text
+              h3 vận chuyển miễn phí
+              p.mb-0 Trong phạm vi 5km
+        .col-md-6.col-lg-3
+          .promo-item
+            span.fa.fa-refresh.promo-icon.mr-3
+            .promo-text
+              h3 chính sách đổi trả
+              p.mb-0 Đổi trả hàng trong vòng 30 ngày
+        .col-md-6.col-lg-3
+          .promo-item
+            span.fa.fa-cogs.promo-icon.mr-3
+            .promo-text
+              h3 chính sách bảo hành
+              p.mb-0 1 năm của nhà sản xuất
+        .col-md-6.col-lg-3
+          .promo-item
+            span.fa.fa-group.promo-icon.mr-3
+            .promo-text
+              h3 hỗ trợ
+              p.mb-0 Tư vấn nhiệt tình 24/7
+
+  footer.site-footer.py-4.py-md-5
+    .container
+      .row
+        .col-lg-3
+          .site-logo
+            a.d-block(href='index.html')
+              img.img-fluid.d-block(src='images/logo.png', alt='site-logo')
+          p.text-justify.mt-3.mb-lg-0 Chúng tôi chuyên cung cấp các loại máy phát điện với chất lượng hàng đầu. Sản phẩm  nguồn gốc xuất xứ rõ ràng, đa dạng phong phú, giúp khách hàng dễ dàng tìm thấy sản phẩm phù hợp với chi phí thấp nhất.
+
+        .col-lg-3
+          h4.site-footer-header.text-uppercase liên hệ chúng tôi
+          p.font-weight-bold.text-blue.text-uppercase Công ty Việt Nhật VNETCo
+          p Địa chỉ: Số 25, TDP Phú thứ, Nam từ liêm, Hà nội
+          p Phone: 
+            a(href='tel:0399815232') 039 981 5232
+          p Email: Lamvt20031979@gmail.com
+
+        .col-lg-3
+          h4.site-footer-header.text-uppercase chính sách
+          ul.list-unstyled.list-inline
+            li.list-item
+              a(href="#", title="") Chính sách bảo hành
+            li.list-item
+              a(href="#", title="") chính sách đổi trả
+            li.list-item
+              a(href="#", title="") Giao hàng và Thanh toán
+            li.list-item
+              a(href="#", title="") Hỗ Trợ Khách Hàng
+  
+        .col-lg-3
+          h4.site-footer-header.text-uppercase liên kết nhanh
+          ul.list-unstyled.list-inline
+            li.list-item
+              a(href="#", title="") trang chủ
+            li.list-item
+              a(href="#", title="") sản phẩm
+            li.list-item
+              a(href="#", title="") giới thiệu
+            li.list-item
+              a(href="#", title="") Tin Tức
+
+  .copyright
+    .container
+      p.text-center.mb-0
+        | Copyright 2019 by 
+        a.text-uppercase(href="#" title="") Công ty Việt Nhật VNETCo.
+        |  All rights reserved.
+        |  CODE and SEO by 
+        a(href="#" title="") Lamvt.vn
+
+  .overlay-mobile
+  a#go-top.go-top.js-go-top(href='index.html', title='back to top')
+    i.fas.fa-angle-up
+
+  #contact.contact.js-contact
+    .contact-wrap
+      a(href="#" title="").fa.fa-phone
+  .contact-content.js-contact-content
+    ul.list-group.list-group-flush
+      li.list-group-item.p-2
+        a(href="fb.com" title="").d-flex.align-items-center
+          span.fab.fa-facebook-messenger
+          |  Messenger
+      li.list-group-item.p-2
+        a(href="mailto:lamvt20031979@gmail.com" title="").d-flex.align-items-center
+          span.fa.fa-envelope
+          | Email us
+      li.list-group-item.p-2
+        a(href="zalo.com" title="").d-flex.align-items-center
+          img.mr-2.pr-1(src="images/zalo-icon.png", alt="")
+          | Zalo
+      li.list-group-item.p-2
+        a(href="tel:0399815232" title="").d-flex.align-items-center
+          span.fa.fa-phone
+          | Call us
+
+  .contact.contact-close.js-contact-close
+    .contact-wrap.bg-transparent
+      a(href="#" title="").fa.fa-close
+
+  // Modal 
+  .modal.fade#searchModal.mt-5(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5.modal-title#exampleModalLabel Tìm kiếm
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true') ×
+        .modal-body
+          form.form-inline.my-2.my-lg-0.site-search.d-flex.justify-content-center
+            input.form-control.w-100(type='search', placeholder='Nhập từ khóa tìm kiếm...', aria-label='Search')
+            button.btn(type='submit')
+              i.fa.fa-search
+
+  script(src='js/main.js')

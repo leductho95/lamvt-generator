@@ -1,0 +1,446 @@
+
+extends layouts/_layout
+
+block head
+  +head("Benzen - Home page")
+
+block body
+  main.main-body
+    .site-banner.mb-5
+      .container
+        .row
+          .col-lg-8.mb-4.mb-lg-0.px-0.px-md-3
+            #site-carousel.site-carousel.carousel.slide(data-ride='carousel')
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src='images/slider.jpg', alt='banner image')
+                .carousel-item
+                  img.d-block.w-100(src='images/slider.jpg', alt='banner image')
+                .carousel-item
+                  img.d-block.w-100(src='images/slider.jpg', alt='banner image')
+                .carousel-item
+                  img.d-block.w-100(src='images/slider.jpg', alt='banner image')
+              ul.nav.nav-pills.nav-justified
+                li.active(data-target='#site-carousel' data-slide-to='0')
+                  a(href='#') Lorem Ipsum is simply dummy text
+                li(data-target='#site-carousel' data-slide-to='1')
+                  a(href='#') Lorem Ipsum is simply dummy text
+                li(data-target='#site-carousel' data-slide-to='2')
+                  a(href='#') Lorem Ipsum is simply dummy text
+                li(data-target='#site-carousel' data-slide-to='3')
+                  a(href='#') Lorem Ipsum is simply dummy text
+
+          .col-lg-4.px-0.px-md-3
+            .card.home-news.rounded-0
+              .home-news-top
+                h2 TIN MỚI
+                
+              ul.list-group.list-group-flush.home-news-list.rounded-0
+                li.list-group-item.p-2.d-flex
+                  a(href="#" title="")
+                    img.float-left.mr-2(src="images/news.jpg", alt="")
+                    p.mb-2 Lorem Ipsum is simply dummy text of the printing
+                    span.date 10/06/2019
+                li.list-group-item.p-2.d-flex
+                  a(href="#" title="")
+                    img.float-left.mr-2(src="images/news.jpg", alt="")
+                    p.mb-2 Lorem Ipsum is simply dummy text of the printing
+                    span.date 10/06/2019
+
+                li.list-group-item.p-2.d-flex
+                  a(href="#" title="")
+                    img.float-left.mr-2(src="images/news.jpg", alt="")
+                    p.mb-2 Lorem Ipsum is simply dummy text of the printing
+                    span.date 10/06/2019
+                li.list-group-item.p-2.d-flex
+                  a(href="#" title="")
+                    img.float-left.mr-2(src="images/news.jpg", alt="")
+                    p.mb-2 Lorem Ipsum is simply dummy text of the printing
+                    span.date 10/06/2019
+
+    .feature-product.mb-4
+      .container
+        .feature-product-wrap.bg-white
+          .site-heading.site-heading-feature
+            h2 &nbsp;
+          .feature-carousel.owl-carousel
+            +product({
+              imgSrc: 'images/product1.jpg',
+            })
+            +product({
+              imgSrc: 'images/product2.jpg',
+            })
+            +product({
+              imgSrc: 'images/product3.jpg',
+            })
+            +product({
+              imgSrc: 'images/product4.jpg',
+            })
+            +product({
+              imgSrc: 'images/product1.jpg',
+            })
+
+    .product-widget.mb-4
+      .container.px-0.px-md-3
+        .product-wrap.bg-white.mx-0
+          .site-heading.d-flex.align-items-center.justify-content-between
+            h2 sản phẩm khuyến mãi
+            a(href="#" title="")
+              | Xem tất cả 
+              b 150 
+              | sản phẩm
+          .row
+
+            +product({
+              imgSrc: 'images/product5.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product6.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product7.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product8.jpg',
+              column: 'col-6 col-lg-3'
+            })
+
+    .home-banner.mb-4.d-none.d-md-block
+      .container
+        .row
+          .col-4
+            a.d-block(href="#" title="")
+              img(src="images/banner1.jpg", alt="banner", class="img-fluid")
+          .col-4
+            a.d-block(href="#" title="")
+              img(src="images/banner2.jpg", alt="banner", class="img-fluid")
+          .col-4
+            a.d-block(href="#" title="")
+              img(src="images/banner3.jpg", alt="banner", class="img-fluid")
+
+    .product-widget.mb-4
+      .container.px-0.px-md-3
+        .product-wrap.bg-white.mx-0
+          .site-heading.d-flex.align-items-center.justify-content-between
+            h2 máy phát điện honda
+            a(href="#" title="")
+              | Xem tất cả 
+              b 150 
+              | sản phẩm
+          .row
+
+            +product({
+              imgSrc: 'images/product7.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product8.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product9.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product10.jpg',
+              column: 'col-6 col-lg-3'
+            })
+
+    .product-widget.mb-4
+      .container.px-0.px-md-3
+        .product-wrap.bg-white.mx-0
+          .site-heading.d-flex.align-items-center.justify-content-between
+            h2 máy phát điện hyundai
+            a(href="#" title="")
+              | Xem tất cả 
+              b 150 
+              | sản phẩm
+          .row
+
+            +product({
+              imgSrc: 'images/product7.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product16.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product14.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product15.jpg',
+              column: 'col-6 col-lg-3'
+            })
+
+    .product-widget.mb-4
+      .container.px-0.px-md-3
+        .product-wrap.bg-white.mx-0
+          .site-heading.d-flex.align-items-center.justify-content-between
+            h2 máy phát điện 3 pha
+            a(href="#" title="")
+              | Xem tất cả 
+              b 150 
+              | sản phẩm
+          .row
+
+            +product({
+              imgSrc: 'images/product17.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product18.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product19.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product20.jpg',
+              column: 'col-6 col-lg-3'
+            })
+
+    .product-widget.mb-4
+      .container.px-0.px-md-3
+        .product-wrap.bg-white.mx-0
+          .site-heading.d-flex.align-items-center.justify-content-between
+            h2 máy phát điện công nghiệp
+            a(href="#" title="")
+              | Xem tất cả 
+              b 150 
+              | sản phẩm
+          .row
+
+            +product({
+              imgSrc: 'images/product21.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product22.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product23.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product24.jpg',
+              column: 'col-6 col-lg-3'
+            })
+
+    .product-widget.mb-4
+      .container.px-0.px-md-3
+        .product-wrap.bg-white.mx-0
+          .site-heading.d-flex.align-items-center.justify-content-between
+            h2 máy phát điện dự phòng
+            a(href="#" title="")
+              | Xem tất cả 
+              b 150 
+              | sản phẩm
+          .row
+
+            +product({
+              imgSrc: 'images/product25.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product26.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product27.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product28.jpg',
+              column: 'col-6 col-lg-3'
+            })
+
+    .product-widget.mb-4
+      .container.px-0.px-md-3
+        .product-wrap.bg-white.mx-0
+          .site-heading.d-flex.align-items-center.justify-content-between
+            h2 máy phát điện nhập khẩu
+            a(href="#" title="")
+              | Xem tất cả 
+              b 150 
+              | sản phẩm
+          .row
+
+            +product({
+              imgSrc: 'images/product29.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product30.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product31.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product32.jpg',
+              column: 'col-6 col-lg-3'
+            })
+
+    .product-widget.mb-4
+      .container.px-0.px-md-3
+        .product-wrap.bg-white.mx-0
+          .site-heading.d-flex.align-items-center.justify-content-between
+            h2 máy phát điện giá rẻ
+            a(href="#" title="")
+              | Xem tất cả 
+              b 150 
+              | sản phẩm
+          .row
+
+            +product({
+              imgSrc: 'images/product20.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product5.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product6.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product10.jpg',
+              column: 'col-6 col-lg-3'
+            })
+
+    .product-widget.mb-4
+      .container.px-0.px-md-3
+        .product-wrap.bg-white.mx-0
+          .site-heading.d-flex.align-items-center.justify-content-between
+            h2 máy phát điện cũ
+            a(href="#" title="")
+              | Xem tất cả 
+              b 150 
+              | sản phẩm
+          .row
+
+            +product({
+              imgSrc: 'images/product7.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product3.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product2.jpg',
+              column: 'col-6 col-lg-3'
+            })
+            +product({
+              imgSrc: 'images/product1.jpg',
+              column: 'col-6 col-lg-3'
+            })
+
+    .home-banner.mb-4.d-none.d-md-block
+      .container
+        .row
+          .col
+            a.d-block(href="#" title="")
+              img(src="images/banner4.jpg", alt="banner", class="img-fluid")
+
+    .product-list-widget.mb-4
+      .container
+        .row
+          .col-lg-4
+            .site-heading.site-heading-small
+              h2.product-list-heading sản phẩm mới nhất
+            .product-list.d-flex.mb-3
+              a(href="#" title="").d-block.product-list-img
+                img(src="images/product3.jpg", alt="product img")
+              .product-info.product-list-info.p-0.text-left
+                h3
+                  a(href="#") Lorem Ipsum is simply dummy text of the printing industry
+                span.product-price.product-price-small 9.500.000đ
+                del.product-sale.product-sale-small 11.500.000đ
+
+            .product-list.d-flex.mb-3
+              a(href="#" title="").d-block.product-list-img
+                img(src="images/product10.jpg", alt="product img")
+              .product-info.product-list-info.p-0.text-left
+                h3
+                  a(href="#") Lorem Ipsum is simply dummy text of the printing industry
+                span.product-price.product-price-small 9.500.000đ
+                del.product-sale.product-sale-small 11.500.000đ
+
+            .product-list.d-flex.mb-3
+              a(href="#" title="").d-block.product-list-img
+                img(src="images/product20.jpg", alt="product img")
+              .product-info.product-list-info.p-0.text-left
+                h3
+                  a(href="#") Lorem Ipsum is simply dummy text of the printing industry
+                span.product-price.product-price-small 9.500.000đ
+                del.product-sale.product-sale-small 11.500.000đ
+
+          .col-lg-4
+            .site-heading.site-heading-small
+              h2.product-list-heading sản phẩm bán chạy
+            .product-list.d-flex.mb-3
+              a(href="#" title="").d-block.product-list-img
+                img(src="images/product6.jpg", alt="product img")
+              .product-info.product-list-info.p-0.text-left
+                h3
+                  a(href="#") Lorem Ipsum is simply dummy text of the printing industry
+                span.product-price.product-price-small 9.500.000đ
+                del.product-sale.product-sale-small 11.500.000đ
+
+            .product-list.d-flex.mb-3
+              a(href="#" title="").d-block.product-list-img
+                img(src="images/product12.jpg", alt="product img")
+              .product-info.product-list-info.p-0.text-left
+                h3
+                  a(href="#") Lorem Ipsum is simply dummy text of the printing industry
+                span.product-price.product-price-small 9.500.000đ
+                del.product-sale.product-sale-small 11.500.000đ
+
+            .product-list.d-flex.mb-3
+              a(href="#" title="").d-block.product-list-img
+                img(src="images/product25.jpg", alt="product img")
+              .product-info.product-list-info.p-0.text-left
+                h3
+                  a(href="#") Lorem Ipsum is simply dummy text of the printing industry
+                span.product-price.product-price-small 9.500.000đ
+                del.product-sale.product-sale-small 11.500.000đ
+
+          .col-lg-4
+            .site-heading.site-heading-small
+              h2.product-list-heading sản phẩm mua nhiều
+            .product-list.d-flex.mb-3
+              a(href="#" title="").d-block.product-list-img
+                img(src="images/product1.jpg", alt="product img")
+              .product-info.product-list-info.p-0.text-left
+                h3
+                  a(href="#") Lorem Ipsum is simply dummy text of the printing industry
+                span.product-price.product-price-small 9.500.000đ
+                del.product-sale.product-sale-small 11.500.000đ
+
+            .product-list.d-flex.mb-3
+              a(href="#" title="").d-block.product-list-img
+                img(src="images/product9.jpg", alt="product img")
+              .product-info.product-list-info.p-0.text-left
+                h3
+                  a(href="#") Lorem Ipsum is simply dummy text of the printing industry
+                span.product-price.product-price-small 9.500.000đ
+                del.product-sale.product-sale-small 11.500.000đ
+
+            .product-list.d-flex.mb-3
+              a(href="#" title="").d-block.product-list-img
+                img(src="images/product24.jpg", alt="product img")
+              .product-info.product-list-info.p-0.text-left
+                h3
+                  a(href="#") Lorem Ipsum is simply dummy text of the printing industry
+                span.product-price.product-price-small 9.500.000đ
+                del.product-sale.product-sale-small 11.500.000đ

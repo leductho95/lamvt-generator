@@ -1,0 +1,139 @@
+mixin product({imgSrc, column})
+  if column
+    div(class=column)
+      .product
+        a.d-block(href="#" title="").product-img
+          img(src= imgSrc, alt="", class='img-fluid')
+        hr
+        .product-info
+          h3
+            a(href="#") Lorem Ipsum is simply dummy text of the printing industry
+          span.product-price 9.500.000đ
+          del.product-sale 11.500.000đ
+          a(href="#").product-extra.d-flex.align-items-center
+            img(src= imgSrc, alt="")
+            span.text-left Lorem Ipsum is simply dummy text of the printing.
+
+  else
+    .product
+      a.d-block(href="#" title="").product-img
+        img(src= imgSrc, alt="", class='img-fluid')
+      .product-info
+        h3
+          a(href="#") Lorem Ipsum is simply dummy text of the printing industry
+        span.product-price 9.500.000đ
+        del.product-sale 11.500.000đ
+        a(href="#").product-extra.d-flex.align-items-center
+          img(src= imgSrc, alt="")
+          span.text-left Lorem Ipsum is simply dummy text of the printing.
+
+mixin blog({imgSrc, column, desc})
+  .blog-item.d-flex
+    .blog-left
+      .blog-img
+        a(href="single.html" title="" class="d-block")
+          img(src=imgSrc alt="blog img" class="mx-auto d-block img-fluid")
+    .blog-right
+      .blog-date
+        span.font-weight-bold 10/06/2019
+      .blog-info
+        h3
+          a(href="single.html" title="" class="blog-title") Lorem Ipsum is simply dummy text of the printing
+
+        if desc === true
+          p.text-justifyify Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
+
+        a(href="single.html" title="" class="blog-viewmore") Xem chi tiết
+
+mixin paginations()
+  .site-pagination
+    a.disabled(href='#') &laquo;
+    a(href='#') 1
+    a.active(href='#') 2
+    a(href='#') 3
+    a(href='#') 4
+    a(href='#') 5
+    a(href='#') 6
+    a(href='#') &raquo;
+
+mixin sidebar()
+  .card.home-news.card.sidebar-item.mb-3.mb-md-4
+    .home-news-top
+      h2 bài viết mới nhất
+      
+    ul.list-group.list-group-flush.home-news-list.rounded-0
+      li.list-group-item.p-2.d-flex
+        a(href="#" title="")
+          img.float-left.mr-2(src="images/news.jpg", alt="")
+          p.mb-2 Lorem Ipsum is simply dummy text of the printing
+          span.date 10/06/2019
+      li.list-group-item.p-2.d-flex
+        a(href="#" title="")
+          img.float-left.mr-2(src="images/news.jpg", alt="")
+          p.mb-2 Lorem Ipsum is simply dummy text of the printing
+          span.date 10/06/2019
+
+      li.list-group-item.p-2.d-flex
+        a(href="#" title="")
+          img.float-left.mr-2(src="images/news.jpg", alt="")
+          p.mb-2 Lorem Ipsum is simply dummy text of the printing
+          span.date 10/06/2019
+      li.list-group-item.p-2.d-flex
+        a(href="#" title="")
+          img.float-left.mr-2(src="images/news.jpg", alt="")
+          p.mb-2 Lorem Ipsum is simply dummy text of the printing
+          span.date 10/06/2019
+
+  .card.home-news.card.sidebar-item.mb-3.mb-md-4
+    .home-news-top
+      h2 sản phẩm mới nhất
+      
+    ul.list-group.list-group-flush.home-news-list.rounded-0
+      li.list-group-item.p-2.d-flex
+        a(href="#" title="")
+          img.float-left.mr-2(src="images/product1.jpg", alt="")
+          p.mb-2 Lorem Ipsum is simply dummy text of the printing
+          span.product-price 11.500.000đ
+      li.list-group-item.p-2.d-flex
+        a(href="#" title="")
+          img.float-left.mr-2(src="images/product2.jpg", alt="")
+          p.mb-2 Lorem Ipsum is simply dummy text of the printing
+          span.product-price 11.500.000đ
+
+      li.list-group-item.p-2.d-flex
+        a(href="#" title="")
+          img.float-left.mr-2(src="images/product3.jpg", alt="")
+          p.mb-2 Lorem Ipsum is simply dummy text of the printing
+          span.product-price 11.500.000đ
+      li.list-group-item.p-2.d-flex
+        a(href="#" title="")
+          img.float-left.mr-2(src="images/product4.jpg", alt="")
+          p.mb-2 Lorem Ipsum is simply dummy text of the printing
+          span.product-price 11.500.000đ
+
+  .card.home-news.card.sidebar-item.mb-3.mb-md-4
+    .home-news-top
+      h2 sản phẩm bán chạy
+      
+    ul.list-group.list-group-flush.home-news-list.rounded-0
+      li.list-group-item.p-2.d-flex
+        a(href="#" title="")
+          img.float-left.mr-2(src="images/product1.jpg", alt="")
+          p.mb-2 Lorem Ipsum is simply dummy text of the printing
+          span.product-price 11.500.000đ
+      li.list-group-item.p-2.d-flex
+        a(href="#" title="")
+          img.float-left.mr-2(src="images/product2.jpg", alt="")
+          p.mb-2 Lorem Ipsum is simply dummy text of the printing
+          span.product-price 11.500.000đ
+
+      li.list-group-item.p-2.d-flex
+        a(href="#" title="")
+          img.float-left.mr-2(src="images/product3.jpg", alt="")
+          p.mb-2 Lorem Ipsum is simply dummy text of the printing
+          span.product-price 11.500.000đ
+      li.list-group-item.p-2.d-flex
+        a(href="#" title="")
+          img.float-left.mr-2(src="images/product4.jpg", alt="")
+          p.mb-2 Lorem Ipsum is simply dummy text of the printing
+          span.product-price 11.500.000đ

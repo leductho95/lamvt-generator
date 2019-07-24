@@ -1,0 +1,18 @@
+
+include _head
+include _mixin
+include _breadcum
+include _sidebar
+include _header
+include _footer
+
+doctype html
+html(lang='en')
+  head
+    block head
+
+  body
+    +header()
+    block body
+
+    +footer()
